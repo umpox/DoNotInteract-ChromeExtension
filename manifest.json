@@ -4,13 +4,12 @@
   "name": "Do Not Interact",
   "description": "Provides the option to disable interaction with a webpage",
   "version": "1.0",
-  //"options_page": "html/options.html",
 
-  /*"icons": { 
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png" 
-  },*/
+  "icons": { 
+    "16": "resources/stopinteract16.png",
+    "48": "resources/stopinteract48.png",
+    "128": "resources/stopinteract128.png" 
+  },
 
   "browser_action": {
     "default_title": "Disable interaction for the current page"
@@ -20,12 +19,13 @@
     {
       "run_at" : "document_end",
       "matches": ["<all_urls>"],
-      "css": ["inject.css"]
+      "css": ["css/inject.css"],
+      "js": ["js/iconCheck.js"]
     }
   ],
 
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["js/background.js"]
   },
   
   "permissions": [

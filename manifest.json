@@ -15,6 +15,10 @@
   "browser_action": {
     "default_title": "Disable interaction for the current page"
   },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
   
   "permissions": [
     "http://*/*",

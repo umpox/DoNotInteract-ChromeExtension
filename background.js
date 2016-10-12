@@ -2,17 +2,17 @@ var active = false;
 
 chrome.browserAction.onClicked.addListener(
     function(tab) { 
-        //console.log(document.documentElement.classList.add('DoNotInteract'));
-    
-        /*if (active === false) {
-            document.documentElement.classList.add('DoNotInteract');
-            alert('hey');
+        if (active === false) {
+            chrome.tabs.executeScript({
+                code: 'document.documentElement.classList.add("DoNotInteract")'
+            });
             active = true;
         }
         else {
-            document.documentElement.classList.remove('DoNotInteract');
-            alert('heya');
+            chrome.tabs.executeScript({
+                code: 'document.documentElement.classList.remove("DoNotInteract")'
+            });
             active = false;
-        }*/
+        }
     }
 );

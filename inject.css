@@ -1,5 +1,8 @@
 .DoNotInteract {
     pointer-events: none!important;
+    cursor:not-allowed!important;
+    user-select: none!important;
+    -webkit-user-select: none!important;
 }
 
 /*Must be !important in case a website uses overriding properties*/

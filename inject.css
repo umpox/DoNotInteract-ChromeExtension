@@ -1,0 +1,5 @@
+.DoNotInteract {
+    pointer-events: none!important;
+}
+
+/*Must be !important in case a website uses overriding properties*/

@@ -16,6 +16,14 @@
     "default_title": "Disable interaction for the current page"
   },
 
+  "content_scripts": [
+    {
+      "run_at" : "document_end",
+      "matches": ["<all_urls>"],
+      "css": ["inject.css"]
+    }
+  ],
+
   "background": {
     "scripts": ["background.js"]
   },
